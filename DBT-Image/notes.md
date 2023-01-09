@@ -10,3 +10,9 @@ WORKDIR /dbt
 
 Após isso basta rodar o comando abaixo, ponto no final é porque o arquivo está no diretório atual:
 docker build --tag my-dbt-redshift .
+
+Para startar o container e setar o diretório "usr/app" da imagem do container em "DBT-Image/dbt", volume para conectar minha máquina com o container:
+docker run -it --network=host --mount 'type=bind,source=/workspace/analytics-dbt-redshit/DBT-Image/dbt,destination=/usr/app' my-dbt-redshift
+
+Ao rodar o comando anterior, já iniciou e está dentro do container. Para verificar a versão do DBT e seus plugins:
+dbt --version
