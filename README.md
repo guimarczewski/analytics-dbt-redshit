@@ -1,4 +1,4 @@
 # analytics-dbt-redshit
 
 - Install DBT with Docker - https://docs.getdbt.com/docs/get-started/docker-install
-- Install DBeaver - https://github.com/dbeaver/cloudbeaver/wiki/Run-Docker-Container - "sudo docker pull dbeaver/cloudbeaver:latest", "sudo docker run --name cloudbeaver --rm -ti -p 8978:8978 -v /var/cloudbeaver/workspace:/opt/cloudbeaver/workspace dbeaver/cloudbeaver:latest" cbadmin, cbadmin_password
+- Install DBeaver - https://github.com/Websoft9test/docker-cloudbeaver - "git clone --depth=1 https://github.com/Websoft9/docker-cloudbeaver", "cd docker-cloudbeaver","docker network create websoft9 ","docker compose  up -d". Conecta redshift pelo SQLite
