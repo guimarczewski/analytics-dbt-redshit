@@ -16,3 +16,13 @@ docker run -it --network=host --mount 'type=bind,source=/workspace/analytics-dbt
 
 Ao rodar o comando anterior, já iniciou e está dentro do container. Para verificar a versão do DBT e seus plugins:
 dbt --version
+
+acessar a pasta compartilhada
+cd /usr/app/
+
+iniciar projeto analytics_dbt, seleciona o adaptador redshift e input dos dados de acesso do db
+dbt init <nome_projeto> 
+
+Após isso está salvo dentro do diretório com nome do projeto
+
+Profile analytics_dbt written to /root/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection dentro da pasta de projeto
