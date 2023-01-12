@@ -25,4 +25,17 @@ dbt init <nome_projeto>
 
 Após isso está salvo dentro do diretório com nome do projeto
 
+apt-get install vim - para abrir os arquivos
+vi <arquivo>
+
 Profile analytics_dbt written to /root/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection dentro da pasta de projeto
+
+caso esteja em uma máquina local, para conectar o repo no github:
+dentro da pasta de projeto rodar o comando "git clone <link_repo>.git"
+agora esse novo diretório está sendo versionado, basta mover todos os diretórios do projeto para ele
+git config --global user.email "email"
+git config --global user.name "your name"
+git commit -m "first commit"
+git push
+
+diretório seeds para colocar arquivos csv uteis
